@@ -1,0 +1,47 @@
+let mapleader=" "
+
+" Windowses
+noremap <leader>e :vsc View.SolutionExplorer<CR>
+
+" Tabs
+noremap <leader>tp :vsc Window.PinTab<CR>
+noremap <leader>tup :vsc Window.UnpinTab<CR>
+noremap <leader>tt :vsc  Window.CloseDocumentWindow<CR>
+
+" Git
+noremap <leader>gr :vsc View.GitRepositoryWindow<CR>
+noremap <leader>gw :vsc View.GitWindow<CR>
+
+noremap <leader>gc :vsc Team.Git.Commit<CR>
+noremap <leader>gcp :vsc Team.Git.CommitAndPush<CR>
+noremap <leader>gp :vsc Team.Git.Push<CR>
+
+noremap <leader>ga :vsc Team.Git.Annotate<CR>
+
+
+" Debug
+noremap <leader>b :vsc Debug.ToggleBreakpoint<cr>
+
+
+" Tests
+noremap <leader>r :vsc TestExplorer.RunAllTestsInContext<cr>
+noremap <leader>R :vsc TestExplorer.DebugAllTestsInContext<cr>
+
+
+" Other
+noremap <leader>cl :vsc  Resharper.ReSharper_CleanupCode<cr>
+noremap <leader>fu :vsc ReSharper.Resharper_FindUsages<cr>
+
+noremap <leader>k :vsc Edit.CommentSelection<cr>
+noremap <leader>kk :vsc Edit.UnCommentSelection<cr>
+
+noremap gi :vsc ReSharper.ReSharper_GotoImplementations<CR>
+noremap <leader>jj :vsc View.NavigateBackward<CR>
+
+
+noremap <C-A> gggH<C-O>G
+inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
+cnoremap <C-A> <C-C>gggH<C-O>G
+onoremap <C-A> <C-C>gggH<C-O>G
+snoremap <C-A> <C-C>gggH<C-O>G
+xnoremap <C-A> <C-C>ggVG
