@@ -1,5 +1,7 @@
 let mapleader=" "
 
+" reload file: source ~/_vsvimrc
+
 " Windowses
 noremap <leader>e :vsc View.SolutionExplorer<CR>
 
@@ -7,6 +9,7 @@ noremap <leader>e :vsc View.SolutionExplorer<CR>
 noremap <leader>tp :vsc Window.PinTab<CR>
 noremap <leader>tup :vsc Window.UnpinTab<CR>
 noremap <leader>tt :vsc  Window.CloseDocumentWindow<CR>
+noremap <leader>tw :vsc  Window.NextDocumentWindowNav<CR>
 
 " Git
 noremap <leader>gr :vsc View.GitRepositoryWindow<CR>
@@ -31,12 +34,15 @@ noremap <leader>R :vsc TestExplorer.DebugAllTestsInContext<cr>
 " Other
 noremap <leader>cl :vsc  Resharper.ReSharper_CleanupCode<cr>
 noremap <leader>fu :vsc ReSharper.Resharper_FindUsages<cr>
+noremap <leader>f :vsc ReSharper.ReSharper_GotoType<cr>
+
 
 noremap <leader>k :vsc Edit.CommentSelection<cr>
 noremap <leader>kk :vsc Edit.UnCommentSelection<cr>
 
 noremap gi :vsc ReSharper.ReSharper_GotoImplementations<CR>
 noremap <leader>jj :vsc View.NavigateBackward<CR>
+noremap mm :vsc Edit.ToggleOutliningExpansion<CR>
 
 
 noremap <C-A> gggH<C-O>G
@@ -45,3 +51,7 @@ cnoremap <C-A> <C-C>gggH<C-O>G
 onoremap <C-A> <C-C>gggH<C-O>G
 snoremap <C-A> <C-C>gggH<C-O>G
 xnoremap <C-A> <C-C>ggVG
+
+
+" Маппинги не работающие в vsVim
+" Window.Close - закрытие окна alt + w, alt + w
