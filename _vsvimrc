@@ -4,10 +4,10 @@ let mapleader=" "
 
 " Windowses
 noremap <leader>e :vsc View.SolutionExplorer<CR>
+noremap <leader>el :vsc View.ErrorList<CR>
 
 " Tabs
 noremap <leader>tp :vsc Window.PinTab<CR>
-noremap <leader>tup :vsc Window.UnpinTab<CR>
 noremap <leader>tt :vsc  Window.CloseDocumentWindow<CR>
 noremap <leader>tw :vsc  Window.NextDocumentWindowNav<CR>
 
