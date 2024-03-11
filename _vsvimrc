@@ -1,4 +1,7 @@
 let mapleader=" "
+set relativenumber
+set cursorline
+
 
 " reload file: source ~/_vsvimrc
 
@@ -30,8 +33,8 @@ noremap <leader>dab :vsc Debug.DeleteAllBreakPoints<cr>
 
 
 " Tests
-noremap <leader>r :vsc TestExplorer.RunAllTestsInContext<cr>
-noremap <leader>R :vsc TestExplorer.DebugAllTestsInContext<cr>
+noremap <leader>tr :vsc TestExplorer.RunAllTestsInContext<cr>
+noremap <leader>tR :vsc TestExplorer.DebugAllTestsInContext<cr>
 noremap <leader>td :vsc ReSharper.ReSharper_UnitTestDebugContext<cr>
 noremap <leader>tw :vsc  Resharper.Resharper_ShowUnitTestExplorer<cr>
 
@@ -41,9 +44,8 @@ noremap <leader>cl :vsc  Resharper.ReSharper_CleanupCode<cr>
 noremap <leader>fu :vsc ReSharper.Resharper_FindUsages<cr>
 noremap <leader>cc :vsc Edit.SurroundWith<CR>
 
+noremap <leader>kk :vsc ReSharper.ReSharper_LineComment<CR>
 
-noremap <leader>k :vsc Edit.CommentSelection<cr>
-noremap <leader>kk :vsc Edit.UnCommentSelection<cr>
 
 noremap gi :vsc ReSharper.ReSharper_GotoImplementations<CR>
 noremap gt :vsc ReSharper.ReSharper_GotoTypeDeclaration<CR>
