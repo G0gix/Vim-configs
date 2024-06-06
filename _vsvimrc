@@ -11,8 +11,8 @@ noremap <leader>er :vsc View.ErrorList<CR>
 
 " Tabs
 noremap <leader>tp :vsc Window.PinTab<CR>
-noremap <leader>t :vsc  Window.CloseDocumentWindow<CR>
-nmap <leader>tt gS:vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>
+noremap <leader>tt :vsc  Window.CloseDocumentWindow<CR>
+nmap <leader>t gS:vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>
 
 " Git
 noremap <leader>gr :vsc View.GitRepositoryWindow<CR>
@@ -29,7 +29,7 @@ noremap <leader>ga :vsc Team.Git.Annotate<CR>
 noremap <leader>b :vsc Debug.ToggleBreakpoint<cr>
 noremap <leader>db :vsc Debug.DisableAllBreakPoints<cr>
 noremap <leader>dab :vsc Debug.DeleteAllBreakPoints<cr>
-
+noremap <leader>hr :vsc Debug.ApplyCodeChanges<cr>
 
 
 " Tests
@@ -59,7 +59,7 @@ cnoremap <C-A> <C-C>gggH<C-O>G
 onoremap <C-A> <C-C>gggH<C-O>G
 snoremap <C-A> <C-C>gggH<C-O>G
 xnoremap <C-A> <C-C>ggVG
-
+ 
 " EasyMotion
 " gS prefix is added for ViEmu, no use for VsVim AFAIK.
 "VsVim and ViEmu are disabled until PeasyMotion finishes
@@ -68,10 +68,10 @@ xnoremap <C-A> <C-C>ggVG
 nnoremap ff gS:vsc Tools.InvokePeasyMotion<CR>
 
 "Select text from current caret position to desired jump label (fwd and reverse directions supported)
-nmap <leader>es gS:vsc Tools.InvokePeasyMotionTextSelect<CR>
+" nmap <leader>es gS:vsc Tools.InvokePeasyMotionTextSelect<CR>
 
 "Jump to word ending in current line
-nmap fe gS:vsc Tools.InvokePeasyMotionLineJumpToWordEnding<CR>
+" nmap fe gS:vsc Tools.InvokePeasyMotionLineJumpToWordEnding<CR>
 
 
 " Маппинги не работающие в vsVim
