@@ -1,8 +1,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Vim-like Navigation ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
+SetCapsLockState, AlwaysOff
 
-#If GetKeyState("Space", "P")
+#If GetKeyState("CapsLock", "P")
 h::Left
 j::Down
 k::Up
@@ -18,4 +19,9 @@ d::Delete
 e::Enter
 #If
 
-*CapsLock::Send {Space}
+*CapsLock::
+KeyWait, CapsLock
+;IF A_ThisHotkey = *CapsLock
+;	Send, {Delete}
+Return
+;;;;;;;;;;;;;;;;;;;;;;;;;
