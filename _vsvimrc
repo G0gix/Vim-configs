@@ -8,6 +8,9 @@ set cursorline
 " Windowses
 noremap <leader>e :vsc View.SolutionExplorer<CR>
 noremap <leader>er :vsc View.ErrorList<CR>
+noremap <leader>w :vsc Debug.Watch1<CR>
+noremap <leader>l :vsc Debug.Locals<CR>
+
 
 " Tabs
 noremap <leader>tp :vsc Window.PinTab<CR>
@@ -30,6 +33,12 @@ noremap <leader>b :vsc Debug.ToggleBreakpoint<cr>
 noremap <leader>db :vsc Debug.DisableAllBreakPoints<cr>
 noremap <leader>dab :vsc Debug.DeleteAllBreakPoints<cr>
 noremap <leader>hr :vsc Debug.ApplyCodeChanges<cr>
+noremap <leader>aw :vsc Debug.AddWatch<cr>
+
+noremap <leader>1 :vsc Debug.StepOver<cr>
+noremap <leader>2 :vsc Debug.StepInto<cr>
+noremap <leader>3 :vsc Debug.StepOut<cr>
+
 
 
 " Tests
