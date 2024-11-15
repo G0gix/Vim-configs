@@ -35,22 +35,24 @@ noremap <leader>dab :vsc Debug.DeleteAllBreakPoints<cr>
 noremap <leader>hr :vsc Debug.ApplyCodeChanges<cr>
 noremap <leader>aw :vsc Debug.AddWatch<cr>
 
-noremap <leader>1 :vsc Debug.StepOver<cr>
-noremap <leader>2 :vsc Debug.StepInto<cr>
-noremap <leader>3 :vsc Debug.StepOut<cr>
+noremap 4 :vsc Debug.StepOver<cr>
+noremap 3 :vsc Debug.StepInto<cr>
+noremap 2 :vsc Debug.StepOut<cr>
+noremap 1 :vsc Debug.Start<cr>
 
 
 
 " Tests
 noremap <leader>tr :vsc TestExplorer.RunAllTestsInContext<cr>
-noremap <leader>tR :vsc TestExplorer.DebugAllTestsInContext<cr>
-noremap <leader>td :vsc ReSharper.ReSharper_UnitTestDebugContext<cr>
+noremap <leader>td :vsc TestExplorer.DebugAllTestsInContext<cr>
+" почему-то не работает noremap <leader>td :vsc ReSharper.ReSharper_UnitTestDebugContext<cr>
 noremap <leader>tw :vsc  Resharper.Resharper_ShowUnitTestExplorer<cr>
 
 
 " Other
 noremap <leader>cl :vsc  Resharper.ReSharper_CleanupCode<cr>
 noremap <leader>fu :vsc ReSharper.Resharper_FindUsages<cr>
+nnoremap <C-f> :vsc Edit.Find<CR>
 noremap <leader>cc :vsc Edit.SurroundWith<CR>
 
 noremap <leader>kk :vsc ReSharper.ReSharper_LineComment<CR>
